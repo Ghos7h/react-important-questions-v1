@@ -5,6 +5,8 @@ import ReactStyle from './components/ReactStyle'
 import ControlledAndUncontrolled from './components/ControlledAndUncontrolled'
 import VDOM from './components/VDOM';
 import InnerHtml from './components/InnerHtml'
+import StateLess from './components/StateLess';
+import StateFul from './components/StateFul';
 
 function App() {
   const [displayCount, setDisplayCount] = useState(0)
@@ -33,6 +35,10 @@ function App() {
 
         <h1>Inner Html</h1>
         <InnerHtml/>
+        <h1>Stateful and Stateless</h1>
+        <h3>Stateless</h3>
+        <StateLess></StateLess>
+        <StateFul></StateFul>
 
     </div>
   );
