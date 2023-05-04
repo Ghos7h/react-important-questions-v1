@@ -2,6 +2,7 @@ import './App.css';
 import React, {useState} from 'react';
 import Form from './components/Form';
 import ReactStyle from './components/ReactStyle'
+import ControlledAndUncontrolled from './components/ControlledAndUncontrolled'
 
 function App() {
   const [displayCount, setDisplayCount] = useState(0)
@@ -22,6 +23,10 @@ function App() {
         <Form/>
         <h1>React Styling</h1>
         <ReactStyle/>
+
+        <h1>Controlled And Uncontrolled state</h1>
+        <ControlledAndUncontrolled/>
+
     </div>
   );
 }
