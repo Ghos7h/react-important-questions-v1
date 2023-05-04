@@ -1,6 +1,7 @@
 import './App.css';
 import React, {useState} from 'react';
 import Form from './components/Form';
+import ReactStyle from './components/ReactStyle'
 
 function App() {
   const [displayCount, setDisplayCount] = useState(0)
@@ -19,6 +20,8 @@ function App() {
         
         <h1>Form Section</h1>
         <Form/>
+        <h1>React Styling</h1>
+        <ReactStyle/>
     </div>
   );
 }
