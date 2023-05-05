@@ -7,7 +7,10 @@ import VDOM from './components/VDOM';
 import InnerHtml from './components/InnerHtml'
 import StateLess from './components/StateLess';
 import StateFul from './components/StateFul';
-import Debouncing from './components/Debouncing'
+import Debouncing from './components/Debouncing';
+import DemoContext from './components/DemoContext';
+import Posts from './components/HOCs/Posts';
+import User from './components/HOCs/User';
 
 function App() {
   const [displayCount, setDisplayCount] = useState(0)
@@ -43,6 +46,15 @@ function App() {
 
         <h1>Debounce</h1>
         <Debouncing/>
+
+        <h1>Context API</h1>
+        <DemoContext/>
+
+        <h1>Higher Order Component</h1>
+        <p>HOC is a plain js component that takes one argument called the wrapped component and outputs an enhanced component</p>
+        <p>the HOC name starts with an 'with' prefix naming convention in HOC</p>
+        <Posts/>
+        <User/>
 
     </div>
   );
