@@ -11,6 +11,7 @@ import Debouncing from './components/Debouncing';
 import DemoContext from './components/DemoContext';
 import Posts from './components/HOCs/Posts';
 import User from './components/HOCs/User';
+import LazyLoadingComponent from './components/LazyLoadingComponent';
 
 function App() {
   const [displayCount, setDisplayCount] = useState(0)
@@ -55,6 +56,9 @@ function App() {
         <p>the HOC name starts with an 'with' prefix naming convention in HOC</p>
         <Posts/>
         <User/>
+
+        <h1>Lazy Loading</h1>
+        <LazyLoadingComponent/>
 
     </div>
   );
