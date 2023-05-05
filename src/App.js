@@ -7,6 +7,7 @@ import VDOM from './components/VDOM';
 import InnerHtml from './components/InnerHtml'
 import StateLess from './components/StateLess';
 import StateFul from './components/StateFul';
+import Debouncing from './components/Debouncing'
 
 function App() {
   const [displayCount, setDisplayCount] = useState(0)
@@ -39,6 +40,9 @@ function App() {
         <h3>Stateless</h3>
         <StateLess></StateLess>
         <StateFul></StateFul>
+
+        <h1>Debounce</h1>
+        <Debouncing/>
 
     </div>
   );
